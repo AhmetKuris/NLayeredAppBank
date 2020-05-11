@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Northwind.Entities.Abstract;
+
+namespace Northwind.Entities.Concrete
+{
+    public class User:IEntity
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public decimal Balance { get; set; }
+        public int ExtraForLogin { get; set; }
+    }
+}
